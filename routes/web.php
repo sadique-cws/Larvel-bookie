@@ -4,8 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Models\Genres;
 
 Route::get('/', function () {
-    $data['genres'] = Genres::all();
-    
+    $data['genres'] = Genres::take(5)->offset(10)->get();
+
     return view('work.home',$data);
 });
 

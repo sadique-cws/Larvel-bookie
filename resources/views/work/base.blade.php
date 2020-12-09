@@ -22,7 +22,13 @@
         </div>
     </nav>
 
-    @yield('content')
+    @section('content')
+     <div class="bg-dark container-fluid text-white py-5">
+        <div class="container">
+            <h2 class="display-4">Welcome in Book Selling Website</h2>
+        </div>
+    </div>   
+    @show
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
