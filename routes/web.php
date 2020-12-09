@@ -1,15 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Models\Genres;
 
 Route::get('/', function () {
-    return view('work.home');
+    $data['genres'] = Genres::all();
+    
+    return view('work.home',$data);
 });
-
-
-// Route::view("/insert",)
-
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

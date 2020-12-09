@@ -2,9 +2,11 @@
 
 @section('content')
     <div class="container-fluid mt-4">
+        @foreach ($genres as $g)
+        
         <div class="row">
             <div class="col-12">
-                <h4>Novels</h4>
+                <h4>{{$g->title}}</h4>
                 <div id="slide" class="carousel carousel-fade slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item  active">
@@ -40,5 +42,6 @@
                     <a href="" class="btn btn-primary bg-gradient float-end mt-2">>> View all</a>
                 </div>
         </div>
+        @endforeach
     </div>
 @endsection
