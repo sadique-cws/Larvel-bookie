@@ -41,7 +41,7 @@
                     </a>
                   </div>
             
-                    <a href="" class="btn btn-primary bg-gradient float-end mt-2">>> View all</a>
+                    <a href="{{route('genres.index',['id'=>$g->id])}}" class="btn btn-primary bg-gradient float-end mt-2">>> View all</a>
                 </div>
         </div>
         @endforeach
